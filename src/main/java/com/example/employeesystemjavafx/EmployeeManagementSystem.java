@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 import static com.example.employeesystemjavafx.EmployeeUtils.statement;
 
-public class HelloController {
+public class EmployeeManagementSystem {
 
     EmployeeUtils employeeUtils = EmployeeUtils.getInstance();
 

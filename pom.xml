@@ -73,7 +73,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.employeesystemjavafx/com.example.employeesystemjavafx.HelloApplication
+                                com.example.employeesystemjavafx/com.example.employeesystemjavafx.Launcher
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
