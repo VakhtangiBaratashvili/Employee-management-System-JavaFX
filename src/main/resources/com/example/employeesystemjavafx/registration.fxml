@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employeesystemjavafx.HelloController">
+   <children>
+      <TextField fx:id="idField" layoutX="35.0" layoutY="48.0" promptText="Enter ID" />
+      <TextField fx:id="salaryField" layoutX="35.0" layoutY="308.0" promptText="Enter Salary" />
+      <TextField fx:id="firstNameField" layoutX="35.0" layoutY="100.0" promptText="Enter First Name" />
+      <TextField fx:id="lastNameField" layoutX="36.0" layoutY="152.0" promptText="Enter Last Name" />
+      <TextField fx:id="genderField" layoutX="35.0" layoutY="204.0" promptText="Enter Gender" />
+      <TextField fx:id="professionField" layoutX="35.0" layoutY="256.0" promptText="Enter Profession" />
+      <Button fx:id="addBtn" layoutX="34.0" layoutY="392.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="26.0" prefWidth="150.0" text="Add" />
+      <Button fx:id="deleteBtn" layoutX="34.0" layoutY="464.0" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="26.0" prefWidth="150.0" text="Delete" />
+      <TableView fx:id="table" layoutX="210.0" layoutY="48.0" onSort="#updateTableView" prefHeight="444.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="62.39990234375" text="ID" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="88.00006103515625" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="104.79998779296875" text="Last Name" />
+            <TableColumn fx:id="genderColumn" prefWidth="93.60000610351562" text="Gender" />
+            <TableColumn fx:id="professionColumn" prefWidth="104.00006103515625" text="Profession" />
+            <TableColumn fx:id="salaryColumn" prefWidth="117.5999755859375" text="Salary" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
